@@ -1,0 +1,29 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coinbase (4.1.0)
+    concurrent-ruby (1.0.5)
+    json (2.0.3)
+    kgio (2.11.0)
+    prometheus-client (0.7.0.pre.rc.1)
+      quantile (~> 0.2.0)
+    quantile (0.2.0)
+    rack (2.0.1)
+    raindrops (0.18.0)
+    unicorn (5.3.0)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coinbase (~> 4.1.0)
+  concurrent-ruby (~> 1.0.5)
+  json (~> 2.0.3)
+  prometheus-client (~> 0.7.0.pre.rc.1)
+  rack (~> 2.0.1)
+  unicorn (~> 5.3.0)
+
+BUNDLED WITH
+   1.14.6
