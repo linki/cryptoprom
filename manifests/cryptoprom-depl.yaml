@@ -1,0 +1,31 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: cryptoprom
+  labels:
+    app: cryptoprom
+spec:
+  template:
+    metadata:
+      labels:
+        app: cryptoprom
+    spec:
+      containers:
+      - name: cryptoprom
+        image: quay.io/linki/cryptoprom:v0.1.0
+        env:
+        - name: COINBASE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: cryptoprom
+              key: COINBASE_API_KEY
+        - name: COINBASE_API_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: cryptoprom
+              key: COINBASE_API_SECRET
+        ports:
+        - containerPort: 9099
+        resources:
+          requests:
+            cpu: 10m
