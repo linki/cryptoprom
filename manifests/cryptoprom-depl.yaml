@@ -25,7 +25,11 @@ spec:
               name: cryptoprom
               key: COINBASE_API_SECRET
         ports:
-        - containerPort: 9099
+        - containerPort: 8080
         resources:
           requests:
             cpu: 10m
+            memory: 64Mi
+          limits:
+            cpu: 100m
+            memory: 256Mi

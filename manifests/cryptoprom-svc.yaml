@@ -6,7 +6,7 @@ metadata:
     app: cryptoprom
 spec:
   ports:
-  - port: 9099
-    targetPort: 9099
+  - port: 8080
+    targetPort: 8080
   selector:
     app: cryptoprom
