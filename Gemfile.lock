@@ -8,7 +8,7 @@ GEM
     prometheus-client (0.7.1)
       quantile (~> 0.2.0)
     quantile (0.2.1)
-    rack (2.0.6)
+    rack (2.0.8)
     raindrops (0.19.0)
     unicorn (5.3.1)
       kgio (~> 2.6)
@@ -22,7 +22,7 @@ DEPENDENCIES
   concurrent-ruby (~> 1.0.5)
   json (~> 2.0.3)
   prometheus-client (~> 0.7.0.pre.rc.1)
-  rack (~> 2.0.6)
+  rack (~> 2.0.8)
   unicorn (~> 5.3.0)
 
 BUNDLED WITH
